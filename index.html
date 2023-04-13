@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-light color-header">
+        <div class="container-fluid">
+          <img class="logo-user" src="./assets/images/logo-user.png" alt="" />
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  id="color-letra-d"
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Mantenedores
+                </a>
+              </li>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Usuarios</a></li>
+              </ul>
+            </ul>
+
+            <form class="d-flex">
+              <button class="btn">
+                <img
+                  src="./assets/images/exit-logo.png"
+                  alt=""
+                  width="50px"
+                  height="50px"
+                />
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="container mt-5">
+      <div class="crear-usuario">
+        <h3 class="mb-5">Ingresar usuario</h3>
+
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label"
+              >Nombre</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="inputEmail3"
+              />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label"
+              >Apellido</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="inputPassword3"
+              />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label"
+              >Género</label
+            >
+            <div class="col-sm-10">
+              <select
+                class="form-select form-select-sm"
+                aria-label="Default select example"
+              >
+                <option selected>Selecciona una opción</option>
+                <option value="1">Femenino</option>
+                <option value="2">Masculino</option>
+                <option value="3">Otro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Descripción adicional</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="boton-agregar">
+            <button type="button" class="btn btn-outline-success btn-sm">
+              Agregar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="container table-rud-user mt-5 table-responsive">
+      <h3>Usuarios</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">N°</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Fecha de nacimiento</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>
+              <button type="button" class="btn btn-outline-warning btn-sm">
+                Actualizar
+              </button>
+              <button type="button" class="btn btn-outline-danger btn-sm">
+                Eliminar
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
