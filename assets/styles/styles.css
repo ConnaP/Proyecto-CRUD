@@ -12,6 +12,10 @@
   background-color: rgb(249, 235, 240);
 }
 
+.texttarea {
+  height: 60px;
+}
+
 #color-letra-d {
   color: #000000;
 }

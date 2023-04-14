@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/footerStyles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -112,11 +113,11 @@
             <label for="exampleFormControlTextarea1" class="form-label"
               >Descripción adicional</label
             >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
+            <input
+              type="text"
+              class="form-control form-control-sm texttarea"
+              id="description"
+            />
           </div>
 
           <div class="boton-agregar">
@@ -158,5 +159,50 @@
         </tbody>
       </table>
     </section>
+
+    <footer class="footer">
+      <div class="comun icon-redes-sociales">
+        <div class="circulo2">
+          <img
+            class="img-redessociales"
+            src="./assets/images/icon-instagram.png"
+            alt=""
+          />
+        </div>
+
+        <div class="circulo2">
+          <img
+            class="img-redessociales"
+            src="./assets/images/icon-twiter.png"
+            alt=""
+          />
+        </div>
+
+        <div class="circulo2">
+          <img
+            class="img-redessociales"
+            src="./assets/images/icon-facebook.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="comun">
+        <p class="letras-negras">Te ayudamos</p>
+        <a href="#">Contactanos</a>
+        <a href="#">Devoluciones y cambios</a>
+        <a href="#">Estado del pedido</a>
+      </div>
+      <div class="comun">
+        <p class="letras-negras">Nosotros</p>
+        <a href="#">Historia</a>
+        <a href="#">Tiendas</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="comun">
+        <p class="letras-negras">Legal</p>
+        <a href="#">Privacidad</a>
+        <a href="#">Terminos</a>
+      </div>
+    </footer>
   </body>
 </html>

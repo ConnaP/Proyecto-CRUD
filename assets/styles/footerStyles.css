@@ -1,0 +1,69 @@
+.footer {
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 115px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+footer .comun {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 250px;
+}
+
+footer .icon-redes-sociales {
+  flex-direction: row;
+}
+
+.circulo2 {
+  align-items: center;
+  background-color: #222326;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 54px;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden;
+  width: 54px;
+}
+
+.img-redessociales {
+  background-color: white;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+.letras-negras {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.comun a {
+  color: rgb(54, 53, 53);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.comun a:hover {
+  color: rgb(55, 191, 215);
+}
+
+@media only screen and (max-width: 1344px) {
+  .footer {
+    gap: 25px;
+  }
+
+  footer .comun {
+    margin: 0;
+  }
+}
