@@ -2,19 +2,19 @@ let users = [];
 
 const create = (event) => {
   event.preventDefault();
-  const user = readform();
+  const user = readForm();
 
   if (user) {
-    createRow(user);
-    limpiarFormalurio();
-    saveDataLS(user);
+    createRowTable(user);
+    clearForm();
+    saveDataLocalStorage(user);
   }
 };
 
 const addButton = document.getElementById("add");
 addButton.addEventListener("click", create);
 
-const readform = () => {
+const readForm = () => {
   const nameInput = document.getElementById("name");
   const lastnameInput = document.getElementById("lastname");
   const genderInput = document.getElementById("gender");
@@ -29,22 +29,21 @@ const readform = () => {
 
   const { name, lastname, gender, desc } = user;
 
-  console.log(name);
-
   if (
     name.trim() == "" ||
     lastname.trim() == "" ||
     gender.trim() == "" ||
     desc.trim() == ""
   ) {
-    users.push(user);
     return alert("Existe un campo vacio");
   }
+
+  users.push(user);
 
   return user;
 };
 
-const limpiarFormalurio = () => {
+const clearForm = () => {
   const form = document.getElementById("form");
   form.reset();
 };
@@ -67,17 +66,12 @@ const createRow = (user) => {
       `;
 };
 
-const saveDataLS = (user) => {
+const saveDataLocalStorage = (user) => {
   users.push(user);
-  // JSON.stringify()
   localStorage.setItem("users", JSON.stringify(users));
 };
 
-const readFromLS = () => {
-  //  const users = JSON.parse(localStorage.getItem('users'))
-  //  tareas.forEach((el)=> createRow(el))
-
-  // correcta
+const readFromLocalStorage = () => {
   const users = JSON.parse(localStorage.getItem("users")) || [];
   users.forEach(user => { 
     createRow(user);
@@ -86,4 +80,4 @@ const readFromLS = () => {
   console.log(users);
 };
 
-readFromLS();
+readFromLocalStorage();
