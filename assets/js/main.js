@@ -57,7 +57,6 @@ const createRowTable = (user) => {
 
   tbody.innerHTML += `
         <tr id="tr${user.id}">
-              <td>${user.id}</td>
               <td>${user.name}</td>
               <td>${user.lastname}</td>
               <td>${user.gender}</td>
@@ -109,16 +108,16 @@ const editRowTable = (idUser) => {
   });
 
   const nameInput = document.getElementById("name");
-  nameInput.value = arrayValuesInputs[1];
+  nameInput.value = arrayValuesInputs[0];
 
   const lastnameInput = document.getElementById("lastname");
-  lastnameInput.value = arrayValuesInputs[2];
+  lastnameInput.value = arrayValuesInputs[1];
 
   const genderInput = document.getElementById("gender");
-  genderInput.value = arrayValuesInputs[3];
+  genderInput.value = arrayValuesInputs[2];
 
   const descInput = document.getElementById("description");
-  descInput.value = arrayValuesInputs[4];
+  descInput.value = arrayValuesInputs[3];
 
   const btnAdd = document.getElementById("add");
 
