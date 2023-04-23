@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mantenedor de usuarios</title>
+    <link rel="icon" href="./assets/images/logo-user.png">
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <link rel="stylesheet" href="./assets/styles/footerStyles.css" />
     <link
@@ -27,23 +28,9 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  id="color-letra-d"
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Mantenedores
-                </a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Mantenedor</a>
               </li>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Usuarios</a></li>
-              </ul>
             </ul>
 
             <form class="d-flex">
@@ -129,7 +116,7 @@
             />
           </div>
 
-          <div class="boton-agregar">
+          <div id="content-btn" class="boton-agregar">
             <button
               type="button"
               class="btn btn-outline-success btn-sm"
@@ -147,6 +134,7 @@
       <table class="table table-hover">
         <thead>
           <tr>
+            <th scope="col">Id</th>
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
             <th scope="col">Género</th>
